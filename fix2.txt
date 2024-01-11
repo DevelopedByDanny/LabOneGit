@@ -29,3 +29,10 @@ git push -u origin main
 git add fix2.txt
 git commit -m "add commands to add origin and push to remote"
 git push
+git config --global commit.gpgsign true (Fick skriva detta för att aktivera verifieringen från terminalen)
+git stash
+git reset --soft 081fadb3f605f9baaa6049e9b0a7f589f256fa90 (för att hoppa tillbaka till innan jag gjorde commits för att testa om det blev verified)
+git stash pop
+git add .
+git commit -m "reset the repo to its state before testing verification"
+git push --force
