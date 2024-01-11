@@ -1,0 +1,26 @@
+git init
+git init -M main
+git add README.md
+git commit -m "initial commit"
+git checkout -b feature1
+git add README.md
+git commit -m "add dog and replace moose with mouse"
+git checkout main
+git add README.md
+git commit -m "change moose to mahmut"
+git merge feature1 (Löste merge konflikten i vscode)
+git commit -m "merge feature1 into main"
+git tag extinct
+git reset --hard HEAD~1
+git branch feature2
+git add README.md
+git commit -m "capitalize animal names"
+git switch feature2
+git add fix1.txt
+git commit -m "add fix1.txt"
+git add fix2.txt
+git commit -m "add fix2.txt"
+git switch main
+git cherry-pick a88e82
+git add fix2.txt 
+git commit -m "update fix2.txt with git commands used"
