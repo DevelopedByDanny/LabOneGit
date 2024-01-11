@@ -24,3 +24,5 @@ git switch main
 git cherry-pick a88e82
 git add fix2.txt 
 git commit -m "update fix2.txt with git commands used"
+git remote add origin https://github.com/DevelopedByDanny/LabOneGit.git
+git push -u origin main
