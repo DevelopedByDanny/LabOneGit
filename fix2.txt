@@ -26,3 +26,6 @@ git add fix2.txt
 git commit -m "update fix2.txt with git commands used"
 git remote add origin https://github.com/DevelopedByDanny/LabOneGit.git
 git push -u origin main
+git add fix2.txt
+git commit -m "add commands to add origin and push to remote"
+git push
