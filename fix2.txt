@@ -40,3 +40,12 @@ git add .gitignore
 git add fix2.txt
 git commit -m "add .gitignore with updated/working rules and update fix2 with those commands"
 git push
+git tag -a v1.0 -m "Version 1.0"
+git push origin v1.0
+git rebase -i HEAD~2 (Detta blev att jag slog ihop de två commitsen jag gjorde när jag la till .gitignore, känndes som det var samma sak. Jag fixade och trixade lite för att få till det så har lite extra commits emellan)
+git checkout -b feature3
+git add fix2.txt
+git commit -m "update fix2 with all commands"
+git checkout main
+git merge feature3
+git push
