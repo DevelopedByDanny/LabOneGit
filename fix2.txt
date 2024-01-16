@@ -36,3 +36,7 @@ git stash pop
 git add .
 git commit -m "reset the repo to its state before testing verification"
 git push --force
+git add .gitignore
+git add fix2.txt
+git commit -m "add .gitignore with updated/working rules and update fix2 with those commands"
+git push
